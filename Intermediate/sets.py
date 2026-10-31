@@ -1,0 +1,10 @@
+odds={1,3,5,7}
+evens={2,4,6,8}
+print(odds.union(evens))
+print(odds.intersection(evens))
+mySet=set()
+print(mySet)
+new=odds.symmetric_difference(evens)
+print(new)
+odds.symmetric_difference_update(evens)
+print(odds)
