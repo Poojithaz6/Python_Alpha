@@ -1,0 +1,15 @@
+myTuple=("max",)
+print(myTuple)
+mytuple2=tuple(
+)
+print(mytuple2)
+mylst=("a","b","c")
+tup=tuple(mylst)
+print(tup)
+tuples=(1,2,3,4)
+lst2=list(tuples)
+lst2.append(5)
+tuples=tuple(lst2)
+print(tuples)
+a,*b,c=tuples
+print(a,b,c)
