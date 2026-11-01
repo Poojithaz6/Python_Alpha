@@ -12,6 +12,7 @@ def check_win():
     choice = get_choice()
     player=choice['player']
     computer=choice['Computer']
+    print(choice.pop())
     print(f"you chose {player}, computer chose {computer}")
     if player==computer:
         return check_win()
@@ -32,6 +33,9 @@ def check_win():
     else:
         return"Spelling error"
 print(check_win())
-
+#print(r.choice(['z','p']))
+'''print(7//2)
+name=['b','a','c']
+print(name.sort())'''
 
 
