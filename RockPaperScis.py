@@ -15,7 +15,23 @@ def check_win():
     print(f"you chose {player}, computer chose {computer}")
     if player==computer:
         return check_win()
-check_win()
+    elif player=='rock':
+        if computer=='paper':
+            return "Paper covers rock, you loose!"
+        return "Rock smashes scissors, you win!"
+
+    elif player=='paper':
+        if computer=='scissor':
+            return "Scissor cuts paper, you loose!"
+        return "paper covers rock, you win!"
+
+    elif player=='scissor':
+        if computer=='rock':
+            return "Rock smashes scissors, you loose!"
+        return "Scissor cuts paper, you win!"
+    else:
+        return"Spelling error"
+print(check_win())
 
 
 
