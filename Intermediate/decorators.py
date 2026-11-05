@@ -34,17 +34,39 @@ def repeat(n):
 @repeat(n=7)#gotta give the input in the decorstor call and it takes a new fn along with wrapper so that the times variable can be taken into consideration.
 def greet():
     print("Hello Poojitha")
-greet()'''
+greet()
 import time
+import functools
+from doctest import debug
+
+
 def timeControl(func):
+    @functools.wraps(func)
     def wrapper(*args,**kwargs):
         start_time=time.time()
-        func(*args,**kwargs)
+        result=func(*args,**kwargs)
         end_time=time.time()
-        return end_time-start_time
+        print("time take:",end_time-start_time)
+        return result
     return wrapper
 @timeControl
 def add(a,b):
     time.sleep(2)
     return a+b
 print(add(3,4))
+#if multiple decorators then in the order of @
+'''
+#class decorators :: maintain and update a state
+class countCalls:
+    def __init__(self,func):
+        self.func=func
+        self.num_calls=0
+    def __call__(self, *args, **kwargs):
+        self.num_calls+=1
+        print(f'This is  executed {self.num_calls} times')
+        return self.func(*args,**kwargs)
+@countCalls
+def say_helo():
+    print('Hello')
+say_helo()
+say_helo()
