@@ -1,7 +1,8 @@
 suits=['spaded','clubs','hearts','diamonds']
-value=10
-rank='K'
+#value=10
+ranks=['K','Q','J','A','2','3','4','5','6','7','8','9','10']
 #print("Your card is: "+ rank + " of "+ suit)
-suits.append('snakes')
+#suits.append('snakes')
 for suit in suits:
-    print(suit)
+    for rank in ranks:
+        print([suit,rank])
