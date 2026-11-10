@@ -1,13 +1,6 @@
-#functions that return object, memory effiecient
-#gen only whn asked for
-def myGen():
-    for i in range(3):
-        yield i
-g=myGen()
-'''
-print(next(g))
-print(next(g))
-print(next(g))'''
-#print(next(g)) the StopIteration
-for i in range(3):
-    print(next(g))
+# counter
+from collections import Counter
+my_str="aabbbgggdd"
+my_counter=Counter(my_str)
+print(my_counter)
+
