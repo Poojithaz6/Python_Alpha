@@ -9,3 +9,8 @@ print(a_sort)
 a=[1,2,3,4]
 b=list(map(lambda x:x**2,a))
 print(b)
+#filter: filter(func,seq) returns for which the func is true
+#reduce : reduce(func,seq) gotta import from functools
+from functools import reduce
+prod=reduce(lambda x,y:x*y,a)
+print(prod)
