@@ -1,0 +1,109 @@
+|--- Sulfate <= 260.920
+|   |--- ph <= 6.061
+|   |   |--- class: 0
+|   |--- ph >  6.061
+|   |   |--- Solids <= 21271.346
+|   |   |   |--- class: 1
+|   |   |--- Solids >  21271.346
+|   |   |   |--- Hardness <= 188.382
+|   |   |   |   |--- class: 1
+|   |   |   |--- Hardness >  188.382
+|   |   |   |   |--- class: 1
+|--- Sulfate >  260.920
+|   |--- Sulfate <= 387.857
+|   |   |--- ph <= 4.704
+|   |   |   |--- Sulfate <= 326.695
+|   |   |   |   |--- Chloramines <= 6.433
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Chloramines >  6.433
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- Sulfate >  326.695
+|   |   |   |   |--- Conductivity <= 425.741
+|   |   |   |   |   |--- Solids <= 21997.736
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Solids >  21997.736
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Conductivity >  425.741
+|   |   |   |   |   |--- Chloramines <= 7.146
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- Chloramines >  7.146
+|   |   |   |   |   |   |--- class: 0
+|   |   |--- ph >  4.704
+|   |   |   |--- Hardness <= 136.728
+|   |   |   |   |--- Chloramines <= 8.459
+|   |   |   |   |   |--- Solids <= 19901.613
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- Solids >  19901.613
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Chloramines >  8.459
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- Hardness >  136.728
+|   |   |   |   |--- Sulfate <= 294.785
+|   |   |   |   |   |--- ph <= 6.743
+|   |   |   |   |   |   |--- Chloramines <= 5.888
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Chloramines >  5.888
+|   |   |   |   |   |   |   |--- Chloramines <= 7.875
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Chloramines >  7.875
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- ph >  6.743
+|   |   |   |   |   |   |--- Turbidity <= 4.626
+|   |   |   |   |   |   |   |--- Hardness <= 215.535
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Hardness >  215.535
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Turbidity >  4.626
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- Sulfate >  294.785
+|   |   |   |   |   |--- ph <= 8.434
+|   |   |   |   |   |   |--- Sulfate <= 353.568
+|   |   |   |   |   |   |   |--- Conductivity <= 601.232
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Conductivity >  601.232
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Sulfate >  353.568
+|   |   |   |   |   |   |   |--- Hardness <= 211.964
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Hardness >  211.964
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- ph >  8.434
+|   |   |   |   |   |   |--- Solids <= 30710.405
+|   |   |   |   |   |   |   |--- Chloramines <= 7.097
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Chloramines >  7.097
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Solids >  30710.405
+|   |   |   |   |   |   |   |--- Trihalomethanes <= 68.545
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Trihalomethanes >  68.545
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |--- Sulfate >  387.857
+|   |   |--- ph <= 7.803
+|   |   |   |--- Chloramines <= 8.787
+|   |   |   |   |--- ph <= 6.808
+|   |   |   |   |   |--- Solids <= 19961.073
+|   |   |   |   |   |   |--- Turbidity <= 4.232
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Turbidity >  4.232
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- Solids >  19961.073
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- ph >  6.808
+|   |   |   |   |   |--- Trihalomethanes <= 63.662
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- Trihalomethanes >  63.662
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |--- Chloramines >  8.787
+|   |   |   |   |--- Trihalomethanes <= 70.288
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- Trihalomethanes >  70.288
+|   |   |   |   |   |--- class: 1
+|   |   |--- ph >  7.803
+|   |   |   |--- Turbidity <= 3.787
+|   |   |   |   |--- class: 0
+|   |   |   |--- Turbidity >  3.787
+|   |   |   |   |--- Organic_carbon <= 14.657
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- Organic_carbon >  14.657
+|   |   |   |   |   |--- class: 0

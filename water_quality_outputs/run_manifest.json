@@ -1,0 +1,54 @@
+{
+  "seed": 42,
+  "dataset_sha256": "904004bde729bfe3d2e195f46343bceead09e32a0eb95bb8184e7e20e029b2bf",
+  "rows": 3276,
+  "train_rows": 2620,
+  "test_rows": 656,
+  "selected_model": "Random Forest",
+  "selection_metric": "5-fold training CV macro F1",
+  "decision_threshold": 0.5,
+  "macro_f1_bootstrap_95pct": [
+    0.563345372187587,
+    0.6399802582332917
+  ],
+  "best_parameters": {
+    "Baseline": {},
+    "CART": {
+      "model__class_weight": "balanced",
+      "model__max_depth": 8,
+      "model__min_samples_leaf": 15
+    },
+    "AdaBoost": {
+      "model__learning_rate": 0.5,
+      "model__n_estimators": 100
+    },
+    "Gradient Boosting": {
+      "model__learning_rate": 0.1,
+      "model__max_depth": 3,
+      "model__n_estimators": 200
+    },
+    "Random Forest": {
+      "model__class_weight": "balanced",
+      "model__max_depth": null,
+      "model__min_samples_leaf": 2
+    }
+  },
+  "versions": {
+    "python": "3.14.5",
+    "sklearn": "1.9.1",
+    "numpy": "2.5.4",
+    "pandas": "2.3.3"
+  },
+  "sources": {
+    "kaggle": "https://www.kaggle.com/datasets/adityakadiwal/water-potability",
+    "uci": "https://archive.ics.uci.edu/dataset/106/water+treatment+plant",
+    "fao": "https://www.fao.org/4/t0234e/T0234E01.htm",
+    "sklearn": "https://scikit-learn.org/stable/modules/ensemble.html"
+  },
+  "limitations": [
+    "Internal random split only",
+    "Unverified external validity",
+    "No full agricultural suitability labels",
+    "No drinking-water certification"
+  ]
+}
